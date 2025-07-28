@@ -351,10 +351,6 @@
   @apply text-gray-300;
 }
 
-.dark .text-gray-600 {
-  @apply text-gray-400;
-}
-
 .dark .border-gray-200 {
   @apply border-gray-700;
 }
