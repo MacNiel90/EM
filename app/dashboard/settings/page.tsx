@@ -3,7 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import { useAuth } from '@/hooks/useAuth';
-import { useSettings } from '@/hooks/useSettings';
+import { useSettings, defaultSettings } from '@/hooks/useSettings';
 import { useNotifications } from '@/hooks/useNotifications';
 import DashboardLayout from '@/components/dashboard/DashboardLayout';
 import { Button } from '@/components/ui/button';

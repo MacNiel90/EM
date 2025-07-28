@@ -131,7 +131,6 @@ export default function SignupPage() {
         <div className="max-w-2xl w-full">
           <Card className="shadow-lg">
             <CardHeader className="text-center py-8">
-              {/* ... (Your existing Card Header) ... */}
               <div className="mx-auto w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-4">
                 <GraduationCap className="w-8 h-8 text-white" />
               </div>
@@ -170,7 +169,7 @@ export default function SignupPage() {
                   {errors.phone && (<p className="mt-1 text-sm text-red-600">{errors.phone}</p>)}
                 </div>
 
-                {/* <-- 6. ADD the grade selector UI component --> */}
+                {/* Grade selector */}
                 <div>
                   <Label htmlFor="grade">Grade / Class</Label>
                   <Select onValueChange={handleGradeChange} value={formData.grade}>
@@ -246,9 +245,51 @@ export default function SignupPage() {
         </div>
       </div>
 
-      {/* ... (Your existing Footer) ... */}
       <footer className="bg-gray-900 text-white py-12">
-      {/*... Whole footer code ...*/}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+              <div className="flex items-center mb-4">
+                <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
+                  <GraduationCap className="w-6 h-6 text-white" />
+                </div>
+                <span className="ml-2 text-lg font-bold">EduMath GH</span>
+              </div>
+              <p className="text-gray-400">
+                WAEC-aligned maths tutoring platform designed specifically for Ghanaian schools and students.
+              </p>
+            </div>
+            <div>
+              <h5 className="font-semibold text-orange-400 mb-4">Quick Links</h5>
+              <ul className="space-y-2">
+                <li><Link href="/" className="text-gray-400 hover:text-orange-400">Home</Link></li>
+                <li><Link href="/courses" className="text-gray-400 hover:text-orange-400">Courses</Link></li>
+                <li><Link href="/resources" className="text-gray-400 hover:text-orange-400">Resources</Link></li>
+                <li><Link href="/students" className="text-gray-400 hover:text-orange-400">For Students</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h5 className="font-semibold text-orange-400 mb-4">Support</h5>
+              <ul className="space-y-2">
+                <li><Link href="/faq" className="text-gray-400 hover:text-orange-400">FAQ</Link></li>
+                <li><Link href="/help" className="text-gray-400 hover:text-orange-400">Help Center</Link></li>
+                <li><Link href="/contact" className="text-gray-400 hover:text-orange-400">Contact Us</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h5 className="font-semibold text-orange-400 mb-4">Contact</h5>
+              <div className="text-gray-400 space-y-2">
+                <p>📍 Accra, Ghana</p>
+                <p>📞 +233 24 123 4567</p>
+                <p>✉️ support@edumathgh.com</p>
+              </div>
+            </div>
+          </div>
+          <hr className="my-8 border-gray-700" />
+          <div className="text-center">
+            <p className="text-gray-400">&copy; 2024 EduMath GH. All rights reserved.</p>
+          </div>
+        </div>
       </footer>
     </div>
   );

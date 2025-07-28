@@ -312,3 +312,6 @@ export const useSettings = () => {
     requestNotificationPermission
   };
 };
+
+// Export default settings for use in other components
+export { defaultSettings };
