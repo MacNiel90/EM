@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect } from 'react';
 import { ChevronRight, GraduationCap, Calculator, TrendingUp, Users, Smartphone, Gift, Quote, Sparkles, Zap, Target } from 'lucide-react';
@@ -133,7 +132,7 @@ export default function HomePage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative gradient-primary text-white py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-24 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-r from-purple-900/20 to-blue-900/20"></div>
           <div className="absolute top-0 left-0 w-full h-full">
@@ -165,10 +164,10 @@ export default function HomePage() {
           </div>
           
           <div className="flex justify-center gap-4 flex-wrap animate-on-scroll">
-            <Button variant="outline" size="lg" className="btn-modern bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white hover:text-blue-600 rounded-xl px-8 py-4" asChild>
+            <Button variant="outline" size="lg" className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white hover:text-blue-600 rounded-xl px-8 py-4" asChild>
               <Link href="/courses">Explore Courses</Link>
             </Button>
-            <Button size="lg" className="btn-modern bg-white text-blue-600 hover:bg-gray-100 rounded-xl px-8 py-4 shadow-modern" asChild>
+            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 rounded-xl px-8 py-4" asChild>
               <Link href="/signup">Start Learning Free</Link>
             </Button>
           </div>
@@ -189,7 +188,7 @@ export default function HomePage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <Card key={index} className="group card-hover border-0 shadow-modern bg-white/80 backdrop-blur-sm animate-on-scroll">
+              <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 bg-white animate-on-scroll">
                 <CardContent className="p-8 text-center relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-full -mr-10 -mt-10"></div>
                   <div className="mb-6 flex justify-center relative">
@@ -220,7 +219,7 @@ export default function HomePage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="group card-hover border-0 shadow-modern bg-white animate-on-scroll relative overflow-hidden">
+              <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 bg-white animate-on-scroll relative overflow-hidden">
                 <CardContent className="p-8 relative">
                   <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-full"></div>
                   <Quote className="w-10 h-10 text-blue-500 mb-6 opacity-60" />
@@ -237,7 +236,7 @@ export default function HomePage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-24 gradient-primary text-white relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-full h-full">
             <div className="absolute top-10 left-10 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
@@ -252,7 +251,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center animate-on-scroll">
-                <div className="glass rounded-2xl p-8 backdrop-blur-sm">
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8">
                   <h3 className="text-5xl md:text-6xl font-bold mb-4 text-gradient bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">{stat.number}</h3>
                   <p className="text-lg font-medium opacity-90">{stat.label}</p>
                 </div>
@@ -272,7 +271,7 @@ export default function HomePage() {
             <p className="text-xl mb-12 text-gray-700 animate-on-scroll leading-relaxed">
             Join thousands of Ghanaian students learning for free
             </p>
-            <Button size="lg" className="btn-modern gradient-primary text-white rounded-xl px-12 py-4 text-lg font-semibold shadow-modern-lg animate-on-scroll" asChild>
+            <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl px-12 py-4 text-lg font-semibold animate-on-scroll" asChild>
             <Link href="/signup">Start Learning Now</Link>
             </Button>
           </div>

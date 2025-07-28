@@ -368,10 +368,6 @@
   @apply text-gray-900;
 }
 
-.dark.high-contrast .text-gray-400 {
-  @apply text-gray-100;
-}
-
 /* Reduced motion */
 .reduce-motion *,
 .reduce-motion *::before,
