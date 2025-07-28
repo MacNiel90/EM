@@ -1,0 +1,59 @@
+{
+  "basic-1": [
+    {
+      "level": "Basic 1–6 (Primary / Basic)",
+      "topics": [
+        "Number concepts: counting, place value, addition, subtraction",
+        "Basic operations: multiplication, division",
+        "Fractions and simple decimals",
+        "Measurement: length, weight, capacity, time",
+        "Basic geometry: shapes, symmetry, spatial awareness",
+        "Introduction to data: pictographs and tally charts"
+      ],
+      "status": "available"
+    }
+  ],
+  "jhs-1": [
+    {
+      "level": "JHS 1–3 (Common Core Programme)",
+      "core_topics": [
+        "Numbers and numeration: integers, fraction, decimals, ratio, percentages",
+        "Algebra: patterns & relationships, simple equations",
+        "Geometry: properties of shapes, angles, basic constructions",
+        "Measurement and estimation: units, perimeter, area, volume",
+        "Statistics & probability: data collection, charts, measures of central tendency, basic probability"
+      ],
+      "status": "available"
+    }
+  ],
+  "shs-1": [
+    {
+      "level": "Senior High School Core Mathematics (SHS1–3)",
+      "core_topics": [
+        "Numbers and Numeration: rational & irrational numbers, ratio, rates, percentages, number bases",
+        "Algebra: algebraic expressions, linear equations & inequalities, quadratic equations, simultaneous equations",
+        "Geometry & Trigonometry: planar geometry, circle theorems, Pythagoras’ theorem, trigonometric ratios, graphs of trig functions",
+        "Mensuration: area, perimeter, surface area and volume of 2D/3D shapes, spherical measurement",
+        "Vectors & Transformation: vector operations, magnitude and direction, rigid motion, scaling",
+        "Statistics & Probability: data analysis, probability, interpretation of results, word‑problem solving"
+      ],
+      "status": "available"
+    }
+  ],
+  "shs-1-elective": [
+    {
+      "level": "SHS Elective Mathematics (SHS1–3)",
+      "elective_topics": [
+        "Algebra: sequences and series, binomial theorem, inequalities, linear programming",
+        "Coordinate Geometry: straight lines, circles, conics",
+        "Trigonometry: trigonometric identities, compound and multiple angles, equations",
+        "Calculus: differentiation & integration with applications",
+        "Matrices & Transformations: matrices, linear transformations",
+        "Vectors & Mechanics: vectors in geometry and statics, forces and equilibrium",
+        "Logic: set theory, relations & functions, proof techniques",
+        "Statistics & Probability: permutation & combinations, correlation & regression, hypothesis testing"
+      ],
+      "status": "available"
+    }
+  ]
+}
