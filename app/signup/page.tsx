@@ -223,7 +223,7 @@ export default function SignupPage() {
                   <Checkbox id="terms" checked={formData.terms} onCheckedChange={(checked) => setFormData(prev => ({ ...prev, terms: checked as boolean }))} className={errors.terms ? 'border-red-500' : ''} />
                   <div className="flex-1">
                     <Label htmlFor="terms" className="text-sm">
-                      I agree to the{' '} <Link href="/terms" className="text-blue-500 hover:text-blue-600">Terms and Conditions</Link>{' '} and{' '} <Link href="/privacy" className="text-blue-500 hover:text-blue-600">Privacy Policy</Link>
+                      I agree to the{' '} <Link href="/terms" className="text-blue-500 hover:text-blue-600">Terms and Conditions</Link>{' '} and{' '} <Link href="/privacy" className=\"text-blue-500 hover:text-blue-600">Privacy Policy</Link>
                     </Label>
                     {errors.terms && (<p className="mt-1 text-sm text-red-600">{errors.terms}</p>)}
                   </div>
